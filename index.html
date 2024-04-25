@@ -7,7 +7,6 @@
     <title>Discover The Wonders of the Sistine Chapel</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="fadeOut.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -28,15 +27,16 @@
     <!-- Div behind navbar to ensure consistent padding in following elements -->
     <div class="h-20"></div>
 
-    <!-- Image with gradient overlay and text overlay -->
+    <!-- Image -->
     <div class="relative overflow-hidden">
         <img src="./Images/Exhibit Logo.png" class="h-screen w-auto min-w-full min-h-full object-cover" alt="Your Image">
-        <div id="scrollPlaceholder" class="absolute bottom-0 w-full h-20 z-0"></div>
+        <div class="absolute bottom-0 w-full h-20 z-0"></div>
     </div>
 
     <!-- Short gradient for "exhibitArrow" to hide under -->
-    <!-- <div class="h-8 bg-gradient-to-r from-[#ffedd5] to-[red]"></div> -->
-    <div class="h-8 relative bg-gradient-to-b from-transparent to-inherit z-10"></div>
+    <div class="bg-main relative h-8 z-10">
+        <!-- <div class="h-8 relative bg-gradient-to-b from-transparent to-black z-10"></div> -->
+    </div>    
 
     <!-- Exhibit Section -->
     <section id="story" class="relative z-10 bg-main min-h-screen pb-12">
@@ -44,43 +44,6 @@
             <h1 class="text-6xl font-bold text-main mb-12 text-center">The Exhibit</h1>
         </div>
     </section>
-
-    <!-- "exhibitArrow" scroller -->
-    <div id="exhibitArrow" class="z-0 fixed left-1/2 transform -translate-x-1/2 text-center text-main bottom-0 cursor-pointer inline-block">
-        <p class="text-2xl mb-4">The Exhibit</p>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-main animate-bounce mx-auto" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v7.5l3.727-3.73a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 1.06-1.06L9.25 11.25v-7.5A.75.75 0 0 1 10 3z" />        </svg>
-        </svg>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var exhibitArrow = document.getElementById("exhibitArrow");
-            var scrollPlaceholder = document.getElementById("scrollPlaceholder");
-
-            // Variable to track whether the click event is enabled or disabled
-            var clickEnabled = true;
-
-            // Click event listener
-            exhibitArrow.addEventListener("click", function() {
-                // Check if click event is enabled
-                if (clickEnabled) {
-                    // Scroll to the events section
-                    scrollPlaceholder.scrollIntoView({ behavior: 'smooth' });
-
-                    // Add fade-out class to trigger the animation
-                    exhibitArrow.classList.add("fade-out");
-
-                    // Disable click event for 1.5 seconds
-                    clickEnabled = false;
-                    setTimeout(function() {
-                        exhibitArrow.classList.remove("fade-out");
-                        clickEnabled = true;
-                    }, 1500);
-                }
-            });
-        });
-    </script>
 
     <!-- Footer -->
     <footer class="relative z-10 bg-accent text-main text-center py-6">
