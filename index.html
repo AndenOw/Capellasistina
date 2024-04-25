@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anden - Personal Website</title>
+    <title>Discover The Wonders of the Sistine Chapel</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fadeOut.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-white">
+<body class="bg-main">
     <!-- Navbar -->
-    <nav class="bg-black p-6 fixed w-full top-0 z-20 h-20">
+    <nav class="bg-accent p-6 fixed w-full top-0 z-20 h-20">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <a href="index.html" class="text-white text-xl font-bold">Worldwide Exhibition</a>
+            <a href="index.html" class="text-main text-xl font-bold">Worldwide Exhibition</a>
             <!-- Navigation Links -->
             <ul class="flex space-x-4">
-                <li><a href="#" class="text-white hover:underline">Who We Are</a></li>
-                <li><a href="#" class="text-white hover:underline">Contact Us</a></li>
+                <li><a href="#" class="text-main hover:underline">Who We Are</a></li>
+                <li><a href="#" class="text-main hover:underline">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -29,128 +30,51 @@
 
     <!-- Image with gradient overlay and text overlay -->
     <div class="relative overflow-hidden">
-        <img src="./Images/mountain.jpg" class="h-screen w-auto min-w-full min-h-full object-cover" alt="Your Image">
+        <img src="./Images/Exhibit Logo.png" class="h-screen w-auto min-w-full min-h-full object-cover" alt="Your Image">
         <div id="scrollPlaceholder" class="absolute bottom-0 w-full h-20 z-0"></div>
     </div>
 
-    <!-- Short gradient for "storyBelow" to hide under -->
-    <div class="h-8 relative bg-gradient-to-b from-transparent to-white z-10"></div>
+    <!-- Short gradient for "exhibitArrow" to hide under -->
+    <!-- <div class="h-8 bg-gradient-to-r from-[#ffedd5] to-[red]"></div> -->
+    <div class="h-8 relative bg-gradient-to-b from-transparent to-inherit z-10"></div>
 
-    <!-- Story Section -->
-    <section id="story" class="relative z-10 bg-white min-h-screen pb-12">
+    <!-- Exhibit Section -->
+    <section id="story" class="relative z-10 bg-main min-h-screen pb-12">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-black mb-12 text-center">My Story</h2>
-
-            <!-- Story Content -->
-            <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-6">
-                <div class="px-6 py-4">
-                    <h3 class="text-xl lg:text-2xl font-bold text-black mb-2">Born</h3>
-                    <p class="text-gray-800 mb-4">Very cute baby</p>
-                </div>
-            </div>
-
-            <!-- Arrow pointing down -->
-            <div class="flex justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black mx-auto" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v7.5l3.727-3.73a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 1.06-1.06L9.25 11.25v-7.5A.75.75 0 0 1 10 3z" />            
-                </svg>
-            </div>            
-
-            <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-6">
-                <div class="px-6 py-4">
-                    <h3 class="text-xl lg:text-2xl font-bold text-black mb-2">Educated</h3>
-                    <p class="text-gray-800 mb-4">Graduated highschool early :)</p>
-                </div>
-            </div>
-
-            <!-- Arrow pointing down -->
-            <div class="flex justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black mx-auto" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v7.5l3.727-3.73a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 1.06-1.06L9.25 11.25v-7.5A.75.75 0 0 1 10 3z" />            
-                </svg>
-            </div>            
-
-            <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-6">
-                <div class="px-6 py-4">
-                    <h3 class="text-xl lg:text-2xl font-bold text-black mb-2">Tried Sales</h3>
-                    <p class="text-gray-800 mb-4">Failed :/</p>
-                </div>
-            </div>
-
-            <!-- Arrow pointing down -->
-            <div class="flex justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black mx-auto" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v7.5l3.727-3.73a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 1.06-1.06L9.25 11.25v-7.5A.75.75 0 0 1 10 3z" />            
-                </svg>
-            </div>            
-
-            <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-6">
-                <div class="px-6 py-4">
-                    <h3 class="text-xl lg:text-2xl font-bold text-black mb-2">Started Self-Teaching Coding</h3>
-                    <p class="text-gray-800 mb-4">Too young to go to bootcamp :/</p>
-                </div>
-            </div>
-
-            <!-- Arrow pointing down -->
-            <div class="flex justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black mx-auto" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v7.5l3.727-3.73a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 1.06-1.06L9.25 11.25v-7.5A.75.75 0 0 1 10 3z" />            
-                </svg>
-            </div>            
-
-            <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-6">
-                <div class="px-6 py-4">
-                    <h3 class="text-xl lg:text-2xl font-bold text-black mb-2">Helped Code For a Startup</h3>
-                    <p class="text-gray-800 mb-4">TypeScript, React, Firebase, CSS/Tailwind</p>
-                </div>
-            </div>
-
-            <!-- Arrow pointing down -->
-            <div class="flex justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black mx-auto" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v7.5l3.727-3.73a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 1.06-1.06L9.25 11.25v-7.5A.75.75 0 0 1 10 3z" />            
-                </svg>
-            </div>            
-
-            <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden mb-6">
-                <div class="px-6 py-4">
-                    <h3 class="text-xl lg:text-2xl font-bold text-black mb-2">You hire me!?</h3>
-                    <p class="text-gray-800 mb-4">😀👍💯</p>
-                </div>
-            </div>
+            <h1 class="text-6xl font-bold text-main mb-12 text-center">The Exhibit</h1>
         </div>
     </section>
 
-    <!-- "storyBelow" scroller -->
-    <div id="storyBelow" class="z-0 fixed left-1/2 transform -translate-x-1/2 text-center text-black bottom-0 cursor-pointer inline-block">
-        <p class="text-2xl mb-4">This is my story</p>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black animate-bounce mx-auto" viewBox="0 0 20 20" fill="currentColor">
+    <!-- "exhibitArrow" scroller -->
+    <div id="exhibitArrow" class="z-0 fixed left-1/2 transform -translate-x-1/2 text-center text-main bottom-0 cursor-pointer inline-block">
+        <p class="text-2xl mb-4">The Exhibit</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-main animate-bounce mx-auto" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a.75.75 0 0 1 .75.75v7.5l3.727-3.73a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 1.06-1.06L9.25 11.25v-7.5A.75.75 0 0 1 10 3z" />        </svg>
         </svg>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var storyBelow = document.getElementById("storyBelow");
+            var exhibitArrow = document.getElementById("exhibitArrow");
             var scrollPlaceholder = document.getElementById("scrollPlaceholder");
 
             // Variable to track whether the click event is enabled or disabled
             var clickEnabled = true;
 
             // Click event listener
-            storyBelow.addEventListener("click", function() {
+            exhibitArrow.addEventListener("click", function() {
                 // Check if click event is enabled
                 if (clickEnabled) {
                     // Scroll to the events section
                     scrollPlaceholder.scrollIntoView({ behavior: 'smooth' });
 
                     // Add fade-out class to trigger the animation
-                    storyBelow.classList.add("fade-out");
+                    exhibitArrow.classList.add("fade-out");
 
                     // Disable click event for 1.5 seconds
                     clickEnabled = false;
                     setTimeout(function() {
-                        storyBelow.classList.remove("fade-out");
+                        exhibitArrow.classList.remove("fade-out");
                         clickEnabled = true;
                     }, 1500);
                 }
@@ -159,7 +83,7 @@
     </script>
 
     <!-- Footer -->
-    <footer class="relative z-10 bg-black text-white text-center py-6">
+    <footer class="relative z-10 bg-accent text-main text-center py-6">
         <p>2024 Anden's Personal Website. All Rights Reserved.</p>
     </footer>
 </body>
