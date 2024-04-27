@@ -1,13 +1,14 @@
 .bg-main {
     /* background-color: #dfddcf; */
-    background-color: #8b7861;
+    background-color: #fff;
 }
 
 .bg-accent {
     /* background-color: #bbaf95; */
-    background-color: #291d13;
+    background-color: #000;
 }
 
 .text-main {
-    color: #e1d9cf;
+    /* color: #e1d9cf; */
+    color: #767676;
 }
