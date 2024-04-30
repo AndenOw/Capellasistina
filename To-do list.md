@@ -1,4 +1,7 @@
 # To-do list
-- [ ] Copy main page format from Einstein Exhibit
-    - [ ] Reformat opening image
-- [ ] Add content from investor decks to the body of the main page
+- [ ] Main page
+    - [ ] Replace content with content from investor deck
+- [ ] Contact page
+    - [ ] Replace content with content from investor deck
+- [ ] About page
+    - [ ] Replace content with content from investor deck
