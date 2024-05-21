@@ -8,6 +8,11 @@
     background-color: #000;
 }
 
+.bg-accent2 {
+    /* background-color: #bbaf95; */
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 .text-main {
     /* color: #e1d9cf; */
     color: #767676;
