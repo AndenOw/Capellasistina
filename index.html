@@ -255,9 +255,28 @@
     </footer>
 
     <script>
-        document.getElementById('menu-button').addEventListener('click', function() {
-            document.getElementById('menu').classList.toggle('hidden');
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+    
+        // Toggle menu visibility on button click
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
         });
+    
+        // Function to check the visibility of the menu button
+        function checkMenuButtonVisibility() {
+            const isMenuButtonVisible = menuButton.offsetParent !== null;
+
+            if(!isMenuButtonVisible && !menu.classList.contains('hidden')) { // If menu button isn't visible and menu is visible
+                menu.classList.add('hidden'); // Hide menu
+            }
+        }
+    
+        // Check menu button visibility on window resize
+        window.addEventListener('resize', checkMenuButtonVisibility);
+    
+        // Initial check on page load
+        checkMenuButtonVisibility();
     </script>
 </body>
 </html>
