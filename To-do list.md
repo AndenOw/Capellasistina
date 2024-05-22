@@ -6,9 +6,5 @@
     - [ ] Mobilize index.html
         - [ ] Redo "History Section"?
     - [ ] Mobilize Contact Us.html
-        - [x] Copy over navbar
-        - [x] Copy over footer
     - [ ] Mobilize Who We Are.html
-        - [x] Copy over navbar
-        - [x] Copy over footer
-- [ ] Add scroll effects
+- [ ] Add scroll effects?
