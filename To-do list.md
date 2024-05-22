@@ -4,8 +4,11 @@
 - [ ] Add email list form
 - [ ] Make responsive design
     - [ ] Mobilize index.html
-        - [ ] Redo "History Section"
-        - [ ] Work on footer
+        - [ ] Redo "History Section"?
     - [ ] Mobilize Contact Us.html
+        - [x] Copy over navbar
+        - [x] Copy over footer
     - [ ] Mobilize Who We Are.html
+        - [x] Copy over navbar
+        - [x] Copy over footer
 - [ ] Add scroll effects

@@ -18,12 +18,21 @@
             <!-- Logo -->
             <a href="../index.html" class="text-main text-xl font-bold">Worldwide Exhibition</a>
             <!-- Navigation Links -->
-            <ul class="flex space-x-4">
+            <ul class="hidden md:flex space-x-4">
                 <li><a href="../Pages/Who We Are.html" class="text-main hover:underline">Who We Are</a></li>
                 <li><a href="../Pages/Contact Us.html" class="text-main hover:underline">Contact Us</a></li>
             </ul>
+            <button class="md:hidden text-main" id="menu-button">Menu</button>
         </div>
     </nav>
+
+    <!-- Hidden links -->
+    <div class="fixed right-0 top-0 bg-accent2 mt-20 hidden z-20 max-w-max" id="menu">
+        <ul class="text-right">
+            <li><a href="../Pages/Who We Are.html" class="block text-main hover:underline p-2">Who We Are</a></li>
+            <li><a href="../Pages/Contact Us.html" class="block text-main hover:underline p-2">Contact Us</a></li>
+        </ul>
+    </div>
 
     <!-- Div behind navbar to ensure consistent padding in following elements -->
     <div class="h-20"></div>
@@ -100,39 +109,62 @@
 
     <!-- Footer -->
     <footer class="relative z-10 bg-accent mt-8">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-3">
+        <div class="container mx-auto px-4 md:px-6">
+            <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> -->
                 <div class="p-2">
-                    <h1 class="text-4xl font-bold text-main mb-12 text-center">Main Office</h1>
-                    <ul class="list-none">
-                        <li class="text-main text-left">5914 W, Courtyard Suite 190</li>
-                        <li class="text-main text-left">Austin, Texas 78730</li>
-                        <li class="text-main text-left">Phone 954 646 0549</li>
-                        <li class="text-main text-left"><a href="http://www.capellasistina.com/" target="none">www.capellasistina.com</a></li>
-                        <li class="text-main text-left">Email info@capellasistina.com</li>
-                        <li class="text-main text-left">Other Offices: Atlanta; Las Vegas; NYC; Dallas; Vancouver, BC.</li>
+                    <h1 class="text-3xl md:text-4xl font-bold text-main mb-4 md:mb-8 text-center">Main Office</h1>
+                    <ul class="list-none text-center">
+                        <li class="text-main">5914 W, Courtyard Suite 190</li>
+                        <li class="text-main">Austin, Texas 78730</li>
+                        <li class="text-main">Phone 954 646 0549</li>
+                        <li class="text-main"><a href="http://www.capellasistina.com/" target="none">www.capellasistina.com</a></li>
+                        <li class="text-main">Email info@capellasistina.com</li>
+                        <li class="text-main">Other Offices: Atlanta; Las Vegas; NYC; Dallas; Vancouver, BC.</li>
                     </ul>
                 </div>
-                <div class="p-2">
-                    <h1 class="text-4xl font-bold text-main mb-12 text-center">Socials</h1>
-                    <div class="grid grid-cols-2 w-1/2 mx-auto mb-4">
-                        <a href="https://www.facebook.com/profile.php?id=61551638534020" target="none"><img src="../Images\Facebook_Logo_Primary.png" class="h-auto w-1/2 mx-auto" alt="Your Image"></a>
-                        <a href="https://www.instagram.com/globaleinsteinevents/" target="none"><img src="../Images\Instagram_Glyph_Gradient.png" class="h-auto w-1/2 mx-auto" alt="Your Image"></a>
+                <!-- <div class="p-2">
+                    <h1 class="text-3xl md:text-4xl font-bold text-main mb-4 md:mb-8 text-center">Socials</h1>
+                    <div class="flex justify-center space-x-4 mb-4">
+                        <a href="https://www.facebook.com/profile.php?id=61551638534020" target="none"><img src="Images/Facebook_Logo_Primary.png" class="h-auto w-12" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/globaleinsteinevents/" target="none"><img src="Images/Instagram_Glyph_Gradient.png" class="h-auto w-12" alt="Instagram"></a>
                     </div>
-                    <ul class="list-none">
-                        <li class="text-main text-center">Monday - Friday:</li>
-                        <li class="text-main text-center">9-AM - 6-PM</li>
-                        <!-- <li class="text-main text-center">Current Exhibit City:</li>
-                        <li class="text-main text-center">Check Our Site</li> -->
+                    <ul class="list-none text-center">
+                        <li class="text-main">Monday - Friday:</li>
+                        <li class="text-main">9-AM - 6-PM</li>
                     </ul>
                 </div>
                 <div class="p-2">
-                    <h1 class="text-4xl font-bold text-main mb-12 text-center">Join the Sistina Exhibit Club</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold text-main mb-4 md:mb-8 text-center">Join the Sistina Exhibit Club</h1>
                     <p class="text-main text-center">Get updates on special events and receive special offers and promotions plus merchandise discounts.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+    
+        // Toggle menu visibility on button click
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
+        });
+    
+        // Function to check the visibility of the menu button
+        function checkMenuButtonVisibility() {
+            const isMenuButtonVisible = menuButton.offsetParent !== null;
+
+            if(!isMenuButtonVisible && !menu.classList.contains('hidden')) { // If menu button isn't visible and menu is visible
+                menu.classList.add('hidden'); // Hide menu
+            }
+        }
+    
+        // Check menu button visibility on window resize
+        window.addEventListener('resize', checkMenuButtonVisibility);
+    
+        // Initial check on page load
+        checkMenuButtonVisibility();
+    </script>
 </body>
 
 </html>
