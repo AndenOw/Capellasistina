@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover The Wonders of the Sistine Chapel</title>
-    <link rel="icon" type="image/jpg" href="../Images\The Hands.jpg">
+    <link rel="icon" type="image/jpg" href="../Images/The Hands.jpg">
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="bg-main text-main">
+<body class="bg-main text-main min-h-screen flex flex-col">
     <!-- Navbar -->
     <nav class="bg-accent p-6 fixed w-full top-0 z-20 h-20 text-accent">
         <div class="container mx-auto flex justify-between items-center">
@@ -56,7 +56,7 @@
     <section class="relative z-10 bg-main my-8">
         <div class="container mx-auto px-4 md:px-6">
             <h1 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Our Team</h1>
-            <img src="../Images\Sistina_Investor-13.png" class="h-auto w-full md:w-3/4 mx-auto" alt="Your Image">
+            <img src="../Images/Sistina_Investor-13.png" class="h-auto w-full md:w-3/4 mx-auto" alt="Your Image">
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="md:p-2">
                     <ul class="list-disc list-inside">
@@ -81,7 +81,7 @@
     <section class="relative z-10 bg-main my-8">
         <div class="container mx-auto px-4 md:px-6">
             <h1 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Our Partners</h1>
-            <img src="../Images\Sistina_Investor-12.png" class="h-auto w-full md:w-1/4 mx-auto" alt="Your Image">
+            <img src="../Images/Sistina_Investor-12.png" class="h-auto w-full md:w-1/4 mx-auto" alt="Your Image">
             <p class="p-2"><span class="pl-8"></span>The company has partnered with the Vatican Museum and
                 their exclusive publishing partner, Scripta Maneant, who hold the rights to a vast archive
                 of Renaissance art and artifacts. These include a five year photographic project that has
@@ -96,8 +96,8 @@
             <h1 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Sistine Chapel Tour Planning</h1>
             <p class="p-2"><span class="pl-8"></span>We use existing audience information, demographic data, and our industry knowledge to identify our top tour markets. Then within each market, we conduct extensive research and benchmarking to inform pricing, strategy, and attendance projections.</p>
             <p class="p-2"><span class="pl-8"></span>It is also important to us to work with like-minded institutions that share the values of the exhibition brand.</p>
-            <img src="../Images\Sistina_Investor-32.png" class="h-auto w-full md:w-3/4 mx-auto mb-2" alt="Your Image">
-            <img src="../Images\Sistina_Investor-33.png" class="h-auto w-full md:w-3/4 mx-auto" alt="Your Image">
+            <img src="../Images/Sistina_Investor-32.png" class="h-auto w-full md:w-3/4 mx-auto mb-2" alt="Your Image">
+            <img src="../Images/Sistina_Investor-33.png" class="h-auto w-full md:w-3/4 mx-auto" alt="Your Image">
         </div>
     </section>
 
@@ -105,11 +105,12 @@
     <section class="relative z-10 bg-main my-8">
         <div class="container mx-auto px-4 md:px-6">
             <h1 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Comparable Tours</h1>
-            <img src="../Images\Sistina_Investor-11.png" class="h-auto w-full md:w-3/4 mx-auto" alt="Your Image">
+            <img src="../Images/Sistina_Investor-11.png" class="h-auto w-full md:w-3/4 mx-auto" alt="Your Image">
         </div>
     </section>
 
     <!-- Footer -->
+    <div class="flex-grow"></div> <!-- Fix footer to bottom of screen when screen height is larger than page content height -->
     <footer class="relative z-10 bg-accent mt-8 text-accent">
         <div class="container mx-auto px-4 md:px-6">
             <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> -->
