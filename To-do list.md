@@ -8,3 +8,6 @@
 - [ ] Add email list form?
 - [ ] Improve responsive design?
 - [ ] Add scroll effects?
+
+# Godaddy notes
+- To revert changes, change CNAME www record from "AndenOw.github..." back to "capellasistina.com." Also, delete three of the A records, and revert the remaining A record from the ip address value back to "parked"
